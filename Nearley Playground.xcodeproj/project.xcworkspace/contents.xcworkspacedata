@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MG.xcodeproj">
+      location = "self:/Users/pmk/OneDrive/Codes/nearley-desktop/Nearley Playground.xcodeproj">
    </FileRef>
 </Workspace>
