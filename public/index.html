@@ -1,34 +1,40 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>MacGap</title>
-  
-
-  <style type="text/css" media="screen">
-    html, body {
-      height: 100%;
-      width: 100%;
-      background: #FFF;
-      padding: 0;
-      margin: 0;
-      overflow: hidden;
-      -webkit-user-select: none;
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+    body {
+        background-color: white;
+        font-family: Menlo, Monacco, monospace;
+        margin: 0;
+    }
+    .header {
+        padding: 20px
+    }
+    .title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .preload {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        position: relative;
+    }
+    .loading-wrap {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;  
+        text-align: center;
     }
 
-    h1 {
-      color: #E0E0E0;
-      margin: 18% 0;
-      text-align: center;
-      font-family: helvetica;
-    }
-  </style>
-  
-</head>
-<body>
-  
-  <script type="text/javascript" charset="utf-8">
- </script>
-  
-  <h1>MacGap</h1>
-</body>
-</html>
+</style>
+<div id='mount'>
+    <div class='preload'>
+    </div>
+</div>
+
+<script type="text/javascript" src='./client.bundle.js'></script>
+
+<script>
+  ga('create', 'UA-83153710-5', 'auto');
+  ga('send', 'pageview');
+</script>
