@@ -18,10 +18,8 @@
         "width": 1100,
         "height": 600,
         "position": "center",
-        "min_width": 400,
-        "min_height": 200,
-        "max_width": 1200,
-        "max_height": 800,
+        "min_width": 800,
+        "min_height": 400,
         "opaque": 1,
         "alpha": 1
     }
