@@ -71,10 +71,14 @@ const new_tab_grammar_compiled = compile(new_tab_grammar).output
 class Playground extends Component {
     state = default_playground_state;
     componentWillMount(){
-        if (localStorage.playgroundState){
-            this.state = JSON.parse(localStorage.playgroundState)
+        try {
+            if (localStorage.playgroundState){
+                this.state = JSON.parse(localStorage.playgroundState)
+            }
+        } catch ( e ) {
+
         }
-        // console.log('initial', this.state)
+        // console.log('initial', this.state)*/
     }
     setTabSizes(){
         this.state.tabs.forEach((t, i) => {
